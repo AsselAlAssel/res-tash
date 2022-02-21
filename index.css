@@ -6,7 +6,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     background-color: #2e2e34
 }
 
@@ -218,7 +217,7 @@ body {
 
 /* style the title for the about*/
 
-.item-end .about .tile {
+.item-end .about .title {
     font-size: 15px;
     color: #fff;
 }
