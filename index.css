@@ -7,6 +7,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: #2e2e34
 }
 
 
@@ -21,7 +22,6 @@ body {
 
 .container {
     width: 90%;
-    background-color: red;
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -52,11 +52,17 @@ body {
     height: 100%;
 }
 
+
+/* style for the information container */
+
 .item-start .information {
     position: absolute;
     top: 10%;
     left: 40px;
 }
+
+
+/* style the title for the information */
 
 .item-start .title {
     font-size: 55px;
@@ -64,10 +70,16 @@ body {
     color: #fff;
 }
 
+
+/* style */
+
 .item-start .information .information-watch {
     display: flex;
     align-items: center;
 }
+
+
+/* style the span watch */
 
 .item-start .information .information-watch .watch {
     width: 40px;
@@ -84,24 +96,162 @@ body {
     cursor: pointer;
 }
 
+
+/* style the container has the name  */
+
 .item-start .information .information-watch div {
     color: #fff;
     margin-left: 20px;
 }
+
+
+/* style the span  */
 
 .item-start .information .information-watch div span {
     display: block;
 }
 
 
-/* for the large screen */
+/* end style from the start-item */
 
-@media (min-width: 900px) {
-    .container {
-        width: 60%;
-        background-color: blue;
-    }
+
+/* *********************************************** */
+
+
+/* start style from the end - item */
+
+.item-end {
+    padding: 20px 10px;
+    background-color: #151516;
+    color: #727273;
+}
+
+
+/* style the form and icons container */
+
+.item-end .form-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+}
+
+
+/* style the form */
+
+.item-end .form-icons .form {
+    display: flex;
+    align-items: center;
+}
+
+
+/* style the form input */
+
+.item-end .form-icons .form input {
+    border: none;
+    outline: 0;
+    background: transparent;
+    margin-left: 10px;
+}
+
+
+/* style the icon in the container */
+
+.item-end .form-icons .icon i {
+    padding: 5px;
+}
+
+
+/* style the images container slider */
+
+.item-end .images-slider {
+    overflow-x: scroll;
+    height: 200px;
+    display: flex;
+    margin: 30px 0px;
+}
+
+
+/* style all img in the image slider */
+
+.item-end .images-slider img {
+    width: 70%;
+    height: 100%;
+}
+
+
+/* put margin right without the last child(lst img) */
+
+.item-end .images-slider img:not(:last-child) {
+    margin-right: 15px;
+}
+
+
+/* style the tect in item -end */
+
+.item-end .text {
+    padding: 0px 30px;
+    font-size: 10px;
+}
+
+
+/* style the text to giv it before */
+
+.item-end .text p {
+    position: relative;
+}
+
+
+/* before for the text */
+
+.item-end .text p::before {
+    position: absolute;
+    content: "";
+    top: 7px;
+    left: -30px;
+    width: 20px;
+    height: 1px;
+    background-color: #ccc;
+}
+
+
+/* style the title for the about*/
+
+.item-end .about .title {
+    font-size: 15px;
+    color: #fff;
+}
+
+
+/*style the content in the about */
+
+.item-end .about p {
+    font-size: 13px;
+}
+
+
+/* for the tablet screen */
+
+@media (min-width: 768px) {
     .container .container-item {
         width: 50%;
+    }
+    .container .item-end {
+        padding: 20px 30px;
+    }
+    .item-end .text {
+        font-size: 12px;
+    }
+}
+
+
+/* for larg screen */
+
+@media (min-width: 1000px) {
+    .container {
+        width: 60%;
+    }
+    .item-end .text {
+        font-size: 14px;
     }
 }
