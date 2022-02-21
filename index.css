@@ -3,10 +3,15 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #2e2e32;
+}
+
+.body-container {
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #2e2e34
+    background-color: #2e2e32;
 }
 
 
@@ -20,13 +25,14 @@ body {
 /* style for the container of the task */
 
 .container {
-    width: 90%;
+    width: 95%;
     height: 100px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     height: auto;
     box-shadow: -10px 10px 10px 3px #080809;
+    align-self: center;
 }
 
 
@@ -233,6 +239,9 @@ body {
 /* for the tablet screen */
 
 @media (min-width: 768px) {
+    .container {
+        width: 85%;
+    }
     .container .container-item {
         width: 50%;
     }
@@ -241,6 +250,9 @@ body {
     }
     .item-end .text {
         font-size: 12px;
+    }
+    .body-container {
+        height: 100vh;
     }
 }
 
@@ -253,5 +265,8 @@ body {
     }
     .item-end .text {
         font-size: 14px;
+    }
+    .body-container {
+        height: 100vh;
     }
 }
