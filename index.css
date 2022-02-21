@@ -27,6 +27,7 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     height: auto;
+    box-shadow: -10px 10px 10px 3px #080809;
 }
 
 
@@ -217,7 +218,7 @@ body {
 
 /* style the title for the about*/
 
-.item-end .about .title {
+.item-end .about .tile {
     font-size: 15px;
     color: #fff;
 }
@@ -226,7 +227,7 @@ body {
 /*style the content in the about */
 
 .item-end .about p {
-    font-size: 13px;
+    font-size: 10px;
 }
 
 
