@@ -1,0 +1,279 @@
+/* style for the body */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2e2e32;
+}
+
+.body-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2e2e32;
+}
+
+
+/* style for all elements */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* style for the container of the task */
+
+.container {
+    width: 95%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: auto;
+    box-shadow: -10px 10px 10px 3px #080809;
+    align-self: center;
+}
+
+
+/* style the items in the conatiner */
+
+.container .container-item {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+}
+
+
+/* ***************************************** */
+
+
+/* statr style the item-start */
+
+.item-start {
+    background-image: url(assets/imgs/lava.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* style for the information container */
+
+.item-start .information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    padding: 40px;
+}
+
+
+/* style the title for the information */
+
+.item-start .title {
+    font-size: 55px;
+    letter-spacing: .5px;
+    color: #fff;
+}
+
+
+/* style */
+
+.item-start .information .information-watch {
+    display: flex;
+    align-items: center;
+}
+
+
+/* style the span watch */
+
+.item-start .information .information-watch .watch {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(190, 190, 190, .5);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/* style the container has the name  */
+
+.item-start .information .information-watch div {
+    color: #fff;
+    margin-left: 20px;
+}
+
+
+/* style the span  */
+
+.item-start .information .information-watch div span {
+    display: block;
+}
+
+
+/* end style from the start-item */
+
+
+/* *********************************************** */
+
+
+/* start style from the end - item */
+
+.item-end {
+    padding: 20px 10px;
+    background-color: #151516;
+    color: #727273;
+}
+
+
+/* style the form and icons container */
+
+.item-end .form-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+}
+
+
+/* style the form */
+
+.item-end .form-icons .form {
+    display: flex;
+    align-items: center;
+}
+
+
+/* style the form input */
+
+.item-end .form-icons .form input {
+    border: none;
+    outline: 0;
+    background: transparent;
+    margin-left: 10px;
+}
+
+
+/* style the icon in the container */
+
+.item-end .form-icons .icon i {
+    padding: 5px;
+}
+
+
+/* style the images container slider */
+
+.item-end .images-slider {
+    overflow-x: scroll;
+    height: 200px;
+    display: flex;
+    margin: 30px 0px;
+}
+
+
+/* style all img in the image slider */
+
+.item-end .images-slider img {
+    width: 70%;
+    height: 100%;
+}
+
+
+/* put margin right without the last child(lst img) */
+
+.item-end .images-slider img:not(:last-child) {
+    margin-right: 15px;
+}
+
+
+/* style the tect in item -end */
+
+.item-end .text {
+    padding: 0px 30px;
+    font-size: 10px;
+}
+
+
+/* style the text to giv it before */
+
+.item-end .text p {
+    position: relative;
+}
+
+
+/* before for the text */
+
+.item-end .text p::before {
+    position: absolute;
+    content: "";
+    top: 7px;
+    left: -30px;
+    width: 20px;
+    height: 1px;
+    background-color: #ccc;
+}
+
+
+/* style the title for the about*/
+
+.item-end .about .title {
+    font-size: 15px;
+    color: #fff;
+}
+
+
+/*style the content in the about */
+
+.item-end .about p {
+    font-size: 15px;
+    letter-spacing: 1.5px;
+}
+
+
+/* for the tablet screen */
+
+@media (min-width: 768px) {
+    .container {
+        width: 85%;
+    }
+    .container .container-item {
+        width: 50%;
+        height: auto;
+    }
+    .container .item-end {
+        padding: 20px 30px;
+    }
+    .item-end .text {
+        font-size: 12px;
+    }
+    .body-container {
+        height: 100vh;
+    }
+}
+
+
+/* for larg screen */
+
+@media (min-width: 1000px) {
+    .container {
+        width: 60%;
+    }
+    .container .container-item {
+        /* height: 70%; */
+    }
+    .item-end .text {
+        font-size: 14px;
+    }
+    .body-container {
+        height: 100vh;
+    }
+}
